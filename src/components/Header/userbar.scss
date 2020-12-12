@@ -1,0 +1,35 @@
+.userbar {
+  display: flex;
+  padding-left: 20px;
+
+  &__info {
+    font-family: "Lato", "sans-serif";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+  }
+
+  &__name {
+    font-weight: bold;
+    color: #1d1c1d;
+  }
+
+  &__position {
+    font-weight: normal;
+    color: #959595;
+  }
+
+  &__avatar {
+    margin: 0px 20px;
+  }
+
+  &__dropdown {
+    align-self: center;
+    padding: 1px 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
