@@ -1,0 +1,145 @@
+.employes {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  max-height: 100vh;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    margin: 3px 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid #dddddd;
+    border-top: 0px solid transparent;
+    background: #ffffff;
+  }
+
+  td {
+    padding: 0px;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 7px;
+  }
+
+  &__thead {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #616061;
+    padding: 0px;
+  }
+
+  &__avatar {
+    margin-right: 0.96%;
+  }
+
+  &__status {
+    position: relative;
+    align-items: baseline;
+
+    &::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4cd964;
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    div {
+      display: inline-block;
+    }
+  }
+
+  &__name,
+  &__phone,
+  &__id,
+  &__status {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1d1c1d;
+    margin-bottom: 3px;
+  }
+
+  &__work,
+  &__email,
+  &__passport,
+  &__education {
+    color: #959595;
+  }
+
+  &__select {
+    width: 2.724%;
+    text-align: center;
+  }
+
+  &__info {
+    width: 33.171883777%;
+
+    &--tbody {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__contacts {
+    width: 17.554479419%;
+  }
+
+  &__passport {
+    width: 17.554442615%;
+  }
+
+  &__education {
+    width: 17.554522034%;
+  }
+
+  &__status {
+    width: 8.71%;
+  }
+
+  &__checkbox {
+    margin: 16px 1%;
+  }
+
+  &__personal {
+    margin: 20px 0px;
+  }
+
+  &__row {
+    &--main {
+      vertical-align: initial;
+    }
+  }
+
+  &__more {
+    color: #231f20;
+    font-size: 0.9em;
+  }
+}
