@@ -1,0 +1,44 @@
+.filters {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 5px 6px 6px;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-right: 0.78%;
+
+  &__dropdown,
+  &__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__icon {
+    margin-right: 9px;
+  }
+
+  &__dropdown {
+    text-align: center;
+  }
+
+  &__dropdown:hover {
+    cursor: pointer;
+  }
+
+  &__title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #616061;
+    margin-right: 16px;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}
