@@ -6,7 +6,7 @@ import './control-bar.scss';
 import './search-bar.scss';
 import './filters.scss';
 
-function ControlBar() {
+function ControlBar({ toggleFiltersModal }) {
   return (
     <div className="control-bar">
       <div className="search-bar">
@@ -23,7 +23,7 @@ function ControlBar() {
           placeholder="Начните ввод для поиска сотрудника"
         />
       </div>
-      <div className="filters">
+      <div className="filters" onClick={toggleFiltersModal}>
         <div className="filters__icon">
           <img
             src={filtersIcon}

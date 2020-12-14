@@ -1,0 +1,70 @@
+.modal {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal;
+  font-weight: bold;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1d1c1d;
+  }
+
+  &__reset-btn {
+    font-weight: normal;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #959595;
+  }
+
+  &__filters {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    color: #1d1c1d;
+    margin-left: 2.26%;
+    &:not(:last-child) {
+      border-right: 1px solid #dddddd;
+    }
+  }
+
+  &__filter-row {
+    margin-bottom: 13px;
+  }
+
+  &__filter-group {
+    padding: 0;
+    padding-left: 30px;
+    margin-bottom: 16px;
+  }
+
+  &__filter-selected-one {
+    list-style: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgcng9IjIuNSIgc3Ryb2tlPSIjREREREREIi8+CjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHJ4PSIxIiBmaWxsPSIjRkY0QzAwIi8+Cjwvc3ZnPgoK);
+  }
+
+  &__filter-selected-all {
+    list-style: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgcng9IjIuNSIgc3Ryb2tlPSIjRkY0QzAwIi8+CjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHJ4PSIxIiBmaWxsPSIjRkY0QzAwIi8+Cjwvc3ZnPgoK);
+  }
+
+  &__filter-unavailable {
+    list-style: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgcng9IjIuNSIgc3Ryb2tlPSIjREREREREIi8+Cjwvc3ZnPgoK);
+    color: #959595;
+
+    &--group {
+      color: #1d1c1d;
+    }
+  }
+}

@@ -1,10 +1,13 @@
 import { Component } from 'react';
+import Modal from 'react-modal';
 import Header from './components/Header/Header.js';
 import Menu from './components/Menu/Menu.js';
 import ControlBar from './components/ControlBar/ControlBar.js';
 import EmployesTable from './components/EmployesTable/EmployesTable.js';
+import FiltersModal from './components/FiltersModal/FiltersModal.js';
 
 import './App.scss';
+import modalStyle from './components/FiltersModal/modal-styles.js';
 
 class App extends Component {
   #employe = {
@@ -57,6 +60,7 @@ class App extends Component {
       },
       selectedMenuItem: 11,
       employes: Array(15).fill(this.#employe),
+      showModal: false,
     };
   }
 
@@ -65,8 +69,20 @@ class App extends Component {
     this.setState({ selectedMenuItem });
   };
 
+  toggleFiltersModal = (e) => {
+    this.setState((state) => ({
+      showModal: !state.showModal,
+    }));
+  };
+
   render() {
-    const { companyMenu, adminMenu, selectedMenuItem, employes } = this.state;
+    const {
+      companyMenu,
+      adminMenu,
+      selectedMenuItem,
+      employes,
+      showModal,
+    } = this.state;
 
     return (
       <>
@@ -85,10 +101,19 @@ class App extends Component {
             />
           </aside>
           <div className="content">
-            <ControlBar />
+            <ControlBar toggleFiltersModal={this.toggleFiltersModal} />
             <EmployesTable employes={employes} />
           </div>
         </main>
+        <Modal
+          isOpen={showModal}
+          contentLabel="Filters Modal"
+          shouldCloseOnOverlayClick={true}
+          style={modalStyle}
+          ariaHideApp={true}
+        >
+          <FiltersModal />
+        </Modal>
       </>
     );
   }
