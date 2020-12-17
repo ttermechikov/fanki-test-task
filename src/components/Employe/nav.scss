@@ -1,0 +1,46 @@
+.nav {
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  &__back {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 1%;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    // TODO: refactor this
+    a {
+      text-decoration: none;
+      color: #1d1c1d;
+      border: 1px solid #dddddd;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      padding: 9px 10px;
+      background: #ffffff;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    width: 34px;
+    max-height: 34px;
+    margin-right: 1%;
+    margin-top: 10px;
+    justify-self: flex-end;
+  }
+}
