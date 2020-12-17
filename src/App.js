@@ -107,7 +107,7 @@ class App extends Component {
           <div className="content">
             <Router>
               <Switch>
-                <Route path={['/', '/employes']}>
+                <Route exact path={['/', '/employes']}>
                   <ControlBar toggleFiltersModal={this.toggleFiltersModal} />
                   <EmployesTable employes={employes} />
                 </Route>
