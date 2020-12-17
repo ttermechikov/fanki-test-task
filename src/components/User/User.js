@@ -14,9 +14,9 @@ function User({ isCompactMode }) {
           <div className="user__name  user__name--compact">
             Александров Александр Александрович
           </div>
-          <div className="user__description">
+          <div className="user__description  user__description--compact">
             <div>
-              <div className="user__position">
+              <div className="user__position  user__position--compact">
                 <span>Frontend Разработчик</span>
                 <span>•</span>
                 <span>Frontend Department</span>
@@ -25,7 +25,7 @@ function User({ isCompactMode }) {
                 <span>Дата рождения: </span>
                 <span>1 января 1990</span>
               </div>
-              <div className="user__status">
+              <div className="user__status  user__status--compact">
                 <img src={ellipseIcon} alt="ellipse icon" />
                 <span>Работает</span>
                 <span>
@@ -35,7 +35,9 @@ function User({ isCompactMode }) {
             </div>
             <div>
               {/* <!-- <div> --> */}
-              <span className="user__text">Дата начала работы:</span>
+              <div className="user__text  user__text--compact">
+                Дата начала работы:
+              </div>
               <span className="user__text user__text--bold">
                 20 октября 2018
               </span>

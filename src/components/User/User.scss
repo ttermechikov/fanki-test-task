@@ -12,6 +12,11 @@
   &__avatar--compact {
     padding-left: 67px;
     margin-right: 20px;
+
+    img {
+      width: 64px;
+      height: 64px;
+    }
   }
 
   &__name {
@@ -29,6 +34,7 @@
     font-size: 16px;
     line-height: 19px;
     text-align: left;
+    margin-bottom: 3px;
   }
 
   &__description {
@@ -46,6 +52,16 @@
     }
   }
 
+  &__description--compact {
+    & > div:first-child {
+      padding-right: 71px;
+      margin-right: 20px;
+      margin-bottom: 19px;
+      border-right: 1px solid #dddddd;
+      border-radius: 1px;
+    }
+  }
+
   &__position,
   &__dob span:first-child {
     font-family: 'Lato', sans-serif;
@@ -55,12 +71,17 @@
     line-height: 17px;
     text-align: center;
     color: #616061;
-    margin: 0px 0px 10px 0px;
+    margin: 10px 0px;
   }
 
   &__position span:nth-child(2) {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  &__position--compact {
+    margin: 0px;
+    margin-bottom: 8px;
   }
 
   &__dob span:last-child {
@@ -80,11 +101,19 @@
     font-size: 14px;
     line-height: 17px;
     color: #1d1c1d;
-    margin: 10px 0px;
+    margin-bottom: 10px;
 
     img {
       margin-right: 5px;
     }
+
+    & + div {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__status--compact {
+    margin-top: 4px;
   }
 
   &__text {
@@ -102,5 +131,10 @@
     text-align: center;
     color: #1d1c1d;
     margin-bottom: 10px;
+  }
+
+  &__text--compact {
+    display: inline-block;
+    margin-bottom: 5px 0px 10px;
   }
 }
