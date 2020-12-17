@@ -4,6 +4,23 @@
     margin-left: 20px;
   }
 
+  &__title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #1d1c1d;
+  }
+
+  &__title--secondary {
+    margin-bottom: 9px;
+  }
+
+  &__title--bigger {
+    width: 100%;
+  }
+
   &__item {
     display: flex;
     align-items: center;
@@ -20,7 +37,7 @@
 
   &__item--active {
     background: #fff;
-    border-bottom: 0px solid transparent;
+    border-bottom: 0px solid #fff;
   }
 
   &__content {
