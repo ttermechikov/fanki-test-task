@@ -1,16 +1,20 @@
 import { Component } from 'react';
 import Modal from 'react-modal';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import Header from './components/Header/Header.js';
 import Menu from './components/Menu/Menu.js';
 import ControlBar from './components/ControlBar/ControlBar.js';
 import EmployesTable from './components/EmployesTable/EmployesTable.js';
 import FiltersModal from './components/FiltersModal/FiltersModal.js';
+import Employe from './components/Employe/Employe.js';
 
 import './App.scss';
 import modalStyle from './components/FiltersModal/modal-styles.js';
 
 class App extends Component {
   #employe = {
+    id: 1,
     name: 'Александров Александр Александрович',
     work: {
       position: 'Frontend Разработчик',
@@ -101,8 +105,17 @@ class App extends Component {
             />
           </aside>
           <div className="content">
-            <ControlBar toggleFiltersModal={this.toggleFiltersModal} />
-            <EmployesTable employes={employes} />
+            <Router>
+              <Switch>
+                <Route exact path="/employes">
+                  <ControlBar toggleFiltersModal={this.toggleFiltersModal} />
+                  <EmployesTable employes={employes} />
+                </Route>
+                <Route path="/employes/:id">
+                  <Employe />
+                </Route>
+              </Switch>
+            </Router>
           </div>
         </main>
         <Modal

@@ -1,9 +1,13 @@
+import { useHistory } from 'react-router-dom';
+
 import dropdownOpenedIcon from './img/dropdown-opened-icon.svg';
 import avatar from './img/avatar.svg';
 
 import './employes-table.scss';
 
 function EmployesTable({ employes }) {
+  const history = useHistory();
+
   return (
     <div className="employes">
       <table className="employes__table">
@@ -28,7 +32,11 @@ function EmployesTable({ employes }) {
 
         <tbody className="employes__tbody">
           {employes.map((e) => (
-            <tr className="employes__row" key={e.name}>
+            <tr
+              className="employes__row"
+              key={e.name}
+              onClick={() => history.push(`/employes/${e.id}`)}
+            >
               <td className="employes__select">
                 <input className="employes__checkbox" type="checkbox" />
               </td>
