@@ -1,9 +1,10 @@
-import './header.scss';
+import logo from './img/logo.svg';
+import notificationIcon from './img/bell-icon.svg';
+import dropdownIcon from './img/dropdown-icon.svg';
+import avatar from './img/user-avatar.svg';
+
+import './Header.scss';
 import './userbar.scss';
-import logo from './logo.svg';
-import notificationIcon from './bell-icon.svg';
-import dropdownIcon from './dropdown-icon.svg';
-import avatar from './user-avatar.svg';
 
 function Header() {
   return (
