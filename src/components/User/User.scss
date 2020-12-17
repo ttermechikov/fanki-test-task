@@ -1,0 +1,106 @@
+.user {
+  &--compact {
+    display: flex;
+    padding-top: 12px;
+  }
+
+  &__avatar {
+    text-align: center;
+    margin-bottom: 7px;
+  }
+
+  &__avatar--compact {
+    padding-left: 67px;
+    margin-right: 20px;
+  }
+
+  &__name {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #1d1c1d;
+    margin-bottom: 16px;
+  }
+
+  &__name--compact {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    // margin-left: 12.8%;
+    margin-bottom: 22px;
+
+    & > div:first-child {
+      padding-right: 67px;
+      margin-right: 30px;
+      border-right: 1px solid #dddddd;
+      border-radius: 1px;
+    }
+  }
+
+  &__position,
+  &__dob span:first-child {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #616061;
+    margin: 0px 0px 10px 0px;
+  }
+
+  &__position span:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &__dob span:last-child {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1d1c1d;
+  }
+
+  &__status {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1d1c1d;
+    margin: 10px 0px;
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  &__text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #616061;
+    margin: 5px 0px;
+  }
+
+  &__text--bold {
+    font-weight: bold;
+    text-align: center;
+    color: #1d1c1d;
+    margin-bottom: 10px;
+  }
+}
