@@ -1,10 +1,23 @@
 .documents {
   &__header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    box-shadow: 0 11px 0px
-      linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+
+    &:after {
+      position: absolute;
+      content: '';
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.05) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      bottom: -11px;
+      left: 0px;
+      height: 10px;
+      width: 100%;
+    }
   }
 
   &__place {
@@ -28,14 +41,35 @@
 
   &__controls {
     display: flex;
-    padding: 4px 40px;
+    padding: 2.5px 0px;
+    border-radius: 8px;
   }
 
   &__button {
     padding: 0px 31px;
+    background-color: #f8f8f8;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    max-height: 24px;
 
     &:not(:last-child) {
       border-right: 1px solid #ececec;
+    }
+
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      padding: 4px 31px 4px 40px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding: 4px 40px 4px 31px;
+    }
+
+    &:nth-child(3) {
+      border-right: none;
     }
   }
 
@@ -64,9 +98,7 @@
     align-items: center;
     text-align: center;
     padding: 25px 21px 13px;
-    width: 128px;
-    height: 128px;
-    max-width: 12.8%;
+    max-width: 11.8%;
 
     &:hover {
       background: #f8f8f8;
@@ -85,9 +117,14 @@
     align-items: center;
     text-align: center;
     color: #1d1c1d;
+    width: 109%;
   }
 
   &__badge {
+    margin-bottom: 19px;
+  }
+
+  &__badge--folder {
     margin-bottom: 12px;
   }
 }

@@ -81,13 +81,13 @@ function EmployeDocuments() {
           .map(() => (
             <div className="documents__item">
               <img
-                className="documents__badge"
+                className="documents__badge  documents__badge--folder"
                 src={folderBigIcon}
                 alt="folder badge"
                 width="36px"
                 height="36px"
               />
-              <div className="documents_description">
+              <div className="documents__description">
                 Очень длинное название папки в документах
               </div>
             </div>
@@ -101,7 +101,7 @@ function EmployeDocuments() {
             width="36px"
             height="36px"
           />
-          <div className="documents_description">
+          <div className="documents__description">
             Название документа в файлах.docx
           </div>
         </div>
@@ -113,7 +113,7 @@ function EmployeDocuments() {
             width="36px"
             height="36px"
           />
-          <div className="documents_description">
+          <div className="documents__description">
             Название документа в файлах.xlsx
           </div>
         </div>
@@ -125,7 +125,7 @@ function EmployeDocuments() {
             width="36px"
             height="36px"
           />
-          <div className="documents_description">
+          <div className="documents__description">
             Название документа в файлах.pdf
           </div>
         </div>
@@ -137,7 +137,7 @@ function EmployeDocuments() {
             width="36px"
             height="36px"
           />
-          <div className="documents_description">
+          <div className="documents__description">
             Название документа в файлах.docx
           </div>
         </div>
@@ -149,7 +149,7 @@ function EmployeDocuments() {
             width="36px"
             height="36px"
           />
-          <div className="documents_description">
+          <div className="documents__description">
             Название документа в файлах.zip
           </div>
         </div>
@@ -161,7 +161,7 @@ function EmployeDocuments() {
             width="36px"
             height="36px"
           />
-          <div className="documents_description">
+          <div className="documents__description">
             Название документа в файлах.pdf
           </div>
         </div>
