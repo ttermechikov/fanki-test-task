@@ -136,6 +136,10 @@
     &--main {
       vertical-align: initial;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__more {
